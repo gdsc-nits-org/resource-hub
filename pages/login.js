@@ -1,4 +1,4 @@
-import { Login } from '@/components'
+import { Login } from "@/components"
 function login() {
   return (
     <Login />

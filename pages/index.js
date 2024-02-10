@@ -4,6 +4,8 @@ import styles from "@/styles/Home.module.scss";
 import {  useSession } from "next-auth/react";
 import {useState,useEffect} from "react"
 import Image from "next/image";
+import { signOut } from "next-auth/react"
+
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -24,6 +26,7 @@ export default function Home(){
         <p>Email: {email}</p>
         <p>Name: {name}</p>
         <img src={image} />
+        <button onClick={() => signOut()}>Sign out</button>
       </div>
     )
   }
