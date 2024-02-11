@@ -2,8 +2,7 @@ import Head from "next/head";
 import { Poppins } from "next/font/google";
 import styles from "@/styles/Home.module.scss";
 import {  useSession } from "next-auth/react";
-import {useState,useEffect} from "react"
-import Image from "next/image";
+import {useEffect} from "react"
 import { signOut } from "next-auth/react"
 
 
@@ -16,7 +15,7 @@ export default function Home(){
   useEffect(()=>{
     console.log({session});
   });
-  // Check if the session exists and user is logged in
+
   if (session) {
     const { user } = session
     const { email, name, image } = user
@@ -29,9 +28,7 @@ export default function Home(){
         <button onClick={() => signOut()}>Sign out</button>
       </div>
     )
-  }
 
-  // If user is not logged in or session doesn't exist
   return <p>User is not logged in.</p>
 }
 // export default function Home() {
@@ -71,3 +68,4 @@ export default function Home(){
 //     </>
 //   )
 // }
+}
