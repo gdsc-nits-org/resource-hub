@@ -2,9 +2,11 @@
   "name": "resource-hub",
   "version": "0.1.0",
   "private": true,
+
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+
     "start": "next start",
     "lint": "next lint",
     "pretty": "prettier --write .",
@@ -18,7 +20,8 @@
     "@types/mdx": "^2.0.11",
     "next": "14.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.2.1"
   },
   "devDependencies": {
     "eslint": "^8.56.0",
@@ -31,6 +34,8 @@
     "simple-git-hooks": "^2.9.0"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm precommit"
+    "pre-commit": "pnpm precommit",
+    "lint": "next lint"
+
   }
 }

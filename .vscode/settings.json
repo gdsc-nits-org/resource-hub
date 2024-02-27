@@ -1,0 +1,21 @@
+{
+  "detectedConfig": {
+    "typescript": false,
+    "naming": "Pascal Case",
+    "unit": "px",
+    "framework": "nextjs",
+    "styling": "'Inline Styles"
+  },
+  "locofyConfig": {
+    "project": "ResourceHub",
+    "id": "65dc284e8c2ae4a3e14c22c8",
+    "framework": "react-nextjs",
+    "typescript": false,
+    "styling": "CSS Modules",
+    "unit": "rem",
+    "naming": "Kebab Case",
+    "path": "public/",
+    "componentsPath": "e:\\Res_Hub\\resource-hub\\components",
+    "screensPath": "e:\\Res_Hub\\resource-hub\\pages"
+  }
+}

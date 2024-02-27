@@ -1,0 +1,100 @@
+.sectionHeading {
+  height: 3.28rem;
+  flex: 1;
+  position: relative;
+  line-height: 3.28rem;
+  font-weight: 800;
+  display: inline-block;
+  min-width: 22.28rem;
+  max-width: 100%;
+}
+.sectionHeading1 {
+  height: 3.28rem;
+  width: 13.89rem;
+  position: relative;
+  line-height: 3.28rem;
+  display: flex;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ff9a23, #ff3e59);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  align-items: center;
+  flex-shrink: 0;
+}
+.sectionHeading2SendParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+  max-width: 100%;
+}
+.loremIpsumDolor {
+  margin: 0;
+  width: 40.68rem;
+  height: 3rem;
+  position: relative;
+  font-size: var(--font-size-3xl);
+  line-height: 1.83rem;
+  font-weight: 300;
+  font-family: inherit;
+  color: var(--color-lightgray-100);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.productResourcesList {
+  width: 48.39rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xl);
+  max-width: 100%;
+}
+.footerWithLinksList {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem 0rem var(--padding-6xl) 0rem;
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-29xl-8);
+  color: var(--color-gray-100);
+  font-family: var(--font-inter);
+}
+
+@media screen and (max-width: 750px) {
+  .sectionHeading {
+    font-size: var(--font-size-20xl);
+    line-height: 2.83rem;
+    min-width: 100%;
+  }
+
+  .sectionHeading1 {
+    font-size: var(--font-size-20xl);
+    line-height: 2.83rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .sectionHeading {
+    font-size: var(--font-size-10xl);
+    line-height: 2.11rem;
+  }
+
+  .sectionHeading1 {
+    font-size: var(--font-size-10xl);
+    line-height: 2.11rem;
+  }
+
+  .loremIpsumDolor {
+    font-size: var(--font-size-lg);
+    line-height: 1.44rem;
+  }
+}
