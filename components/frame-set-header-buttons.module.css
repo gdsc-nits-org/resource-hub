@@ -1,0 +1,227 @@
+.headingSend {
+  border: none;
+  background-color: var(--color-white);
+  height: 8.83rem;
+  width: auto;
+  outline: none;
+  align-self: stretch;
+  border-radius: var(--br-xs);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-28xl) var(--padding-41xl);
+  box-sizing: border-box;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+}
+.linkIcon {
+  height: 2.22rem;
+  width: 2.22rem;
+  position: relative;
+  border-radius: var(--br-9980xl);
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.linkRitesh {
+  height: 0.94rem;
+  flex: 1;
+  position: relative;
+  line-height: 1.11rem;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.loremipsum {
+  width: 7.89rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.containerHeadingSendTests {
+  width: 11.89rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-mid);
+}
+.titleOfThe {
+  margin: 0;
+  height: 3.56rem;
+  width: 18.39rem;
+  position: relative;
+  font-size: inherit;
+  line-height: 3.53rem;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+}
+.headingDoyoualsoloveemail {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-8xs);
+  box-sizing: border-box;
+  max-width: 100%;
+  font-family: var(--font-poppins);
+}
+.loremIpsumDolor {
+  margin: 0;
+  height: 5.5rem;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 1.83rem;
+  font-weight: 300;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.frameApprovalsFeedback {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-12xs) 0rem var(--padding-8xs);
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: var(--font-size-3xl);
+  color: var(--color-lightgray-100);
+}
+.tag {
+  height: 0.83rem;
+  width: 1.22rem;
+  position: relative;
+  font-size: var(--font-size-xs);
+  line-height: 0.89rem;
+  font-weight: 500;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+}
+.link {
+  cursor: pointer;
+  border: none;
+  padding: var(--padding-9xs) var(--padding-lg) var(--padding-8xs)
+    var(--padding-mid);
+  background-color: var(--color-darkslategray-100);
+  border-radius: var(--br-9980xl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.link:hover {
+  background-color: var(--color-dimgray);
+}
+.pricing {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-lgi);
+}
+.linkFeb {
+  height: 1.11rem;
+  width: 4.64rem;
+  position: relative;
+  line-height: 1.11rem;
+  display: inline-block;
+}
+.listItemLinkArchives {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  font-size: var(--font-size-sm);
+  color: var(--color-aliceblue-200);
+}
+.framedivindexpageStyledDivrd {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-mini);
+  max-width: 100%;
+}
+.sectionHeadingSend {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem 0rem var(--padding-5xs);
+  box-sizing: border-box;
+  min-width: 41.33rem;
+  max-width: 100%;
+  font-size: var(--font-size-13xl);
+  color: var(--color-white);
+}
+.frameSetHeaderButtons {
+  align-self: stretch;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-gray-300);
+  border: 1px solid var(--color-lightgray-200);
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-12xl) var(--padding-35xl) var(--padding-3xl)
+    var(--padding-22xl);
+  gap: var(--gap-4xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-aliceblue-200);
+  font-family: var(--font-inter);
+}
+
+@media screen and (max-width: 1225px) {
+  .frameSetHeaderButtons {
+    padding-right: var(--padding-8xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .sectionHeadingSend {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .titleOfThe {
+    font-size: var(--font-size-7xl);
+    line-height: 2.83rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .titleOfThe {
+    font-size: var(--font-size-lgi);
+    line-height: 2.11rem;
+  }
+
+  .loremIpsumDolor {
+    font-size: var(--font-size-lg);
+    line-height: 1.44rem;
+  }
+
+  .listItemLinkArchives {
+    flex-wrap: wrap;
+  }
+}
