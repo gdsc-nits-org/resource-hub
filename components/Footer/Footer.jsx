@@ -16,10 +16,10 @@ const Footer = () => {
                                 <div>HTML</div>
                                 <div>CSS</div>
                                 <div>Javascript</div>
-                                <div>Java</div>
+                                {/* <div>Java</div> 
                                 <div>C++</div>
                                 <div>Python</div>
-                                <div>MongoDB</div>
+                                <div>MongoDB</div> */}
                             </div>
                         </div>
                     </div>

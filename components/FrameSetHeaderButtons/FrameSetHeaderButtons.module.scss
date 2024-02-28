@@ -23,14 +23,15 @@
 
 .linkIcon {
     border-radius: var(--br-9980xl);
-    overflow: hidden;
-    flex-shrink: 0;
-    object-fit: cover;
+
+    height: 10rem;
+    width: 10rem;
 }
 
 @media screen and (max-width:600px) {
     .linkIcon {
-        scale: 0.5;
+        height: 4.5rem;
+        width: 4.5rem;
     }
 }
 

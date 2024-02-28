@@ -47,6 +47,7 @@ export default function Home(){
           </div>
         </section> */}
         <FrameSetHeaderButtons icon="https://res.cloudinary.com/dhry5xscm/image/upload/v1709075360/resource-hub/HTML5_Logo_zeyrgi.svg" dest="/HTML" title={"HyperText Markup Language"} date={"28/02/2024"} author={"Barnil Sarma"} about={"A beginner's guide to HTML, TAGS, ATTRIBUTES and many more!!"} />
+        <FrameSetHeaderButtons icon="https://res.cloudinary.com/dhry5xscm/image/upload/v1709084079/resource-hub/CSS3_logo_and_wordmark_scvfqa.svg" dest="/CSS" title={"Cascading Stylesheet"} date={"28/02/2024"} author={"Barnil Sarma"} about={"A beginner's guide to CSS, styling, animation, transitions and many more!!"} />
       </main>
     </div>
   );

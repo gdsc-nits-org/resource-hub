@@ -30,9 +30,9 @@ const MainSection = memo(() => {
                     <div className={styles.rhub}>RHub</div>
                     <div className={styles.home} onClick={gotoHome}>Home</div>
                 </div>
-                <div className={styles.loremIpsum}>
+                {/* <div className={styles.loremIpsum}>
                     <div className={styles.profile}>Profile</div>
-                </div>
+                </div> */}
                 {/* <div className={styles.resourceFrame}>
                     <div className={styles.productHeading}>
                         <input
@@ -45,9 +45,9 @@ const MainSection = memo(() => {
                         <img className={styles.searchIcon} alt="" src="/search@2x.png" />
                     </div>
                 </div> */}
-                <div className={styles.privacyLink}>
+                {/* <div className={styles.privacyLink}>
                     <div className={styles.linkSign}>Sign in</div>
-                </div>
+                </div> */}
                 {/* <button className={styles.itemLink}>
                     <div className={styles.signUp}>Sign up</div>
                 </button> */}
