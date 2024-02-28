@@ -1,9 +1,11 @@
-import Head from "next/head";
 import { Poppins } from "next/font/google";
 import styles from "@/styles/Home.module.scss";
 import {  useSession } from "next-auth/react";
 import {useEffect} from "react"
 import { signOut } from "next-auth/react"
+import Head from "next/head";
+import MainSection from "../components/MainSection/MainSection";
+import FrameSetHeaderButtons from "../components/FrameSetHeaderButtons/FrameSetHeaderButtons";
 
 
 const poppins = Poppins({
@@ -16,20 +18,54 @@ export default function Home(){
     console.log({session});
   });
 
-  if (session) {
-    const { user } = session
-    const { email, name, image } = user
+  return (
+    <div className={styles.landingPage}>
+      <main className={styles.previewsTestingLink}>
+        <section className={styles.frameParent}>
+          <div className={styles.frameWithHeadingsParent}>
+            <div className={styles.frameWithHeadings}>
+              <h1 className={styles.heading1}>Resource Hub</h1>
+            </div>
+            <h2 className={styles.fewAboutLines}>
+              The perfect destination for ethusiasts. The vast collection of resources has been crafted just for you.
+            </h2>
+          </div>
+          {/* <div className={styles.form}>
+            <div className={styles.chidigoodplacecom}>chidi@goodplace.com</div>
+            <button className={styles.button}>
+              <div className={styles.getStarted}>Get started</div>
+            </button>
+          </div> */}
+        </section>
+        {/* <section className={styles.lovedByDevelopersAndMarketParent}>
+          <div className={styles.lovedByDevelopers}>
+            Loved by developers and marketers alike
+          </div>
+          <div className={styles.divindexpageStyleddiv16Rd}>
+            <h1 className={styles.dummy}>DUMMY</h1>
+            <h1 className={styles.dummy}>DUMMY</h1>
+            <h1 className={styles.dummy}>DUMMY</h1>
+            <h1 className={styles.dummy}>DUMMY</h1>
+          </div>
+        </section> */}
+        <FrameSetHeaderButtons icon="https://res.cloudinary.com/dhry5xscm/image/upload/v1709075360/resource-hub/HTML5_Logo_zeyrgi.svg" dest="/HTML" title={"HyperText Markup Language"} date={"28/02/2024"} author={"Barnil Sarma"} about={"A beginner's guide to HTML, TAGS, ATTRIBUTES and many more!!"} />
+      </main>
+    </div>
+  );
 
-    return (
-      <div>
-        <p>Email: {email}</p>
-        <p>Name: {name}</p>
-        <img src={image} />
-        <button onClick={() => signOut()}>Sign out</button>
-      </div>
-    )
+  // if (session) {
+  //   const { user } = session
+  //   const { email, name, image } = user
 
-  return <p>User is not logged in.</p>
+  //   return (
+  //     <div>
+  //       <p>Email: {email}</p>
+  //       <p>Name: {name}</p>
+  //       <img src={image} />
+  //       <button onClick={() => signOut()}>Sign out</button>
+  //     </div>
+  //   )
+  
 }
 // export default function Home() {
 //   const {data:session} = useSession()
@@ -68,4 +104,3 @@ export default function Home(){
 //     </>
 //   )
 // }
-}

@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+.headingSend {
+    border: none;
+    background-color: var(--color-white);
+    height: 8.83rem;
+    width: auto;
+    outline: none;
+    align-self: stretch;
+    border-radius: var(--br-xs);
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-28xl) var(--padding-41xl);
+    box-sizing: border-box;
+    font-family: var(--font-inter);
+    font-size: var(--font-size-13xl);
+    color: var(--color-black);
+}
+
+.linkIcon {
+    border-radius: var(--br-9980xl);
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+@media screen and (max-width:600px) {
+    .linkIcon {
+        scale: 0.5;
+    }
+}
+
+.linkRitesh {
+    height: 0.94rem;
+    flex: 1;
+    position: relative;
+    line-height: 1.11rem;
+    font-weight: 600;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.loremipsum {
+    width: 7.89rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-xs);
+}
+
+.containerHeadingSendTest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+}
+
+.titleOfThe {
+    margin: 0;
+    line-height: 3.53rem;
+    font-size: 2rem;
+    color: #7b8bbe;
+    font-weight: 700;
+    transition-duration: 0.5s;
+}
+
+@media screen and (max-width:600px) {
+    .titleOfThe {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
+
+.frameSetHeaderButtons:hover .titleOfThe {
+    color: #0d1117;
+    transition-duration: 0.5s;
+}
+
+.headingDoyoualsoloveemail {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0rem var(--padding-8xs);
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: var(--font-poppins);
+}
+
+.loremIpsumDolor {
+    margin: 0;
+    height: 5.5rem;
+    flex: 1;
+    position: relative;
+    font-size: inherit;
+    line-height: 1.83rem;
+    font-weight: 300;
+    font-family: inherit;
+    display: inline-block;
+    max-width: 100%;
+    transition-duration: 0.5s;
+    text-align: left;
+}
+
+.frameSetHeaderButtons:hover .loremIpsumDolor {
+    color: #0d1117;
+    transition-duration: 0.5s;
+}
+
+.frameApprovalsFeedback {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0rem var(--padding-12xs) 0rem var(--padding-8xs);
+    box-sizing: border-box;
+    max-width: 100%;
+    font-size: var(--font-size-3xl);
+    color: var(--color-lightgray-100);
+}
+
+.tag {
+    height: 0.83rem;
+    width: 1.22rem;
+    position: relative;
+    font-size: var(--font-size-xs);
+    line-height: 0.89rem;
+    font-weight: 500;
+    font-family: var(--font-inter);
+    color: var(--color-white);
+    text-align: left;
+    display: inline-block;
+}
+
+.link {
+    cursor: pointer;
+    border: none;
+    padding: var(--padding-9xs) var(--padding-lg) var(--padding-8xs) var(--padding-mid);
+    background-color: var(--color-darkslategray-100);
+    border-radius: var(--br-9980xl);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.link:hover {
+    background-color: var(--color-dimgray);
+}
+
+.pricing {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-lgi);
+}
+
+.linkFeb {
+    height: 1.11rem;
+    width: 4.64rem;
+    position: relative;
+    line-height: 1.11rem;
+    display: inline-block;
+}
+
+.listItemLinkArchives {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap-xl);
+    font-size: var(--font-size-sm);
+    color: var(--color-aliceblue-200);
+}
+
+.framedivindexpageStyledDivrd {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-mini);
+    max-width: 100%;
+}
+
+.sectionHeadingSend {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0rem 0rem var(--padding-5xs);
+    box-sizing: border-box;
+    min-width: 41.33rem;
+    max-width: 100%;
+    font-size: var(--font-size-13xl);
+    color: var(--color-white);
+}
+
+.framedivindexpageStyledDivrd {
+    gap: 2rem;
+}
+
+@media screen and (max-width:600px) {
+    .sectionHeadingSend {
+        gap: 2rem;
+    }
+
+    .framedivindexpageStyledDivrd {
+        gap: 2.5rem;
+    }
+}
+
+.frameSetHeaderButtons {
+    align-self: stretch;
+    border: 1.2px solid #7b8bbe;
+    border-radius: 1rem;
+    background-color: var(--color-gray-300);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 3rem 4rem;
+    gap: 4rem;
+    max-width: 100%;
+    text-align: left;
+    font-size: var(--font-size-sm);
+    color: var(--color-aliceblue-200);
+    font-family: var(--font-inter);
+    transition-duration: 0.5s;
+
+    .creator {
+        font-weight: 100;
+        padding: 0;
+        color: #c4c4c4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .frameSetHeaderButtons {
+        gap: 0rem;
+
+        .creator {
+            font-size: 0.5rem;
+        }
+    }
+}
+
+.frameSetHeaderButtons:hover {
+    background-color: #7b8bbe;
+    box-shadow: 0 0 1rem #7b8bbe;
+    transition-duration: 0.5s;
+
+    .creator {
+        color: #0d1117;
+    }
+}
+
+@media screen and (max-width: 1225px) {
+    .frameSetHeaderButtons {
+        padding-right: var(--padding-8xl);
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .frameSetHeaderButtons {
+        padding: 0.1rem;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .sectionHeadingSend {
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .titleOfThe {
+        font-size: var(--font-size-7xl);
+        line-height: 2.83rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .titleOfThe {
+        font-size: var(--font-size-lgi);
+        line-height: 2.11rem;
+    }
+
+    .loremIpsumDolor {
+        font-size: var(--font-size-lg);
+        line-height: 1.44rem;
+        text-align: center;
+    }
+
+    .listItemLinkArchives {
+        flex-wrap: wrap;
+    }
+}

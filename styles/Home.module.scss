@@ -1,5 +1,53 @@
-.main {
-  display: grid;
-  place-content: center;
-  height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+.wholeWrapper {
+  background-color: #0d1117;
+  color: #ffffff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.landingPage {
+  background-color: #0d1117;
+  color: #ffffff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+
+  .previewsTestingLink {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 8rem 4rem;
+
+    .frameParent {
+      .frameWithHeadingsParent {
+        .fewAboutLines {
+          width: 70%;
+          text-align: center;
+          margin: 1rem auto;
+          font-size: 0.8rem;
+          font-weight: 100;
+        }
+
+        @media screen and (min-width:300px) {
+          .fewAboutLines {
+            font-size: 1rem;
+          }
+        }
+
+        .frameWithHeadings {
+          .heading1 {
+            font-size: 1.5rem;
+          }
+
+          @media screen and (min-width:700px) {
+            .heading1 {
+              font-size: 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
