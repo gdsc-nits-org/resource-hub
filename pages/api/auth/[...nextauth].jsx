@@ -1,13 +1,10 @@
 import NextAuth from "next-auth/next";
-import { getServerSession } from "next-auth";
-import { useSession } from "next-auth/react";
-import { redirect, useRouter } from "next/navigation";
 import { prisma } from "../../../libs/prismaDB";
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
 import GoogleProvider from "next-auth/providers/google";
 import CredentialsProvider from "next-auth/providers/credentials";
 import GithubProvider from "next-auth/providers/github";
-import bcrypt from "bcrypt"
+import bcrypt from "bcrypt";
 
 export const authOptions = {
   adapter: PrismaAdapter(prisma),
@@ -28,27 +25,29 @@ export const authOptions = {
         password: { label: "Password", type: "text", placeholder: "password" },
       },
       async authorize(credentials) {
-        if (!credentials || !credentials.email || !credentials.password) {
-          throw new Error('Please enter an email and Password')
+        if (!credentials.email || !credentials.password) {
+          throw new Error("Please enter an email and Password");
         }
-        const user = await prisma.user.findFirst({
+        const user = await prisma.user.findUnique({
           where: { email: credentials.email },
         });
 
-        if (!user || !user ?.hashedPassword) {
-          throw new Error('No user found')
+        if (!user || !user?.hashedPassword) {
+          throw new Error("No user found");
         }
 
-        const passwordMatch = await bcrypt.compare(credentials.password, user.hashedPassword)
+        const passwordMatch = await bcrypt.compare(
+          credentials.password,
+          user.hashedPassword,
+        );
 
         if (!passwordMatch) {
-          throw new Error('Incorrect Password')
+          throw new Error("Incorrect Password");
         }
-
-        return user
+        return user;
       },
     }),
-   ],
+  ],
 
   callbacks: {
     authorized({ req, token }) {

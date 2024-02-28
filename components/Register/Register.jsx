@@ -1,13 +1,17 @@
-import { signIn } from "next-auth/react";
-import styles from "./Login.module.scss";
+"use client";
+import styles from "./Register.module.scss";
 import { useState } from "react";
+import axios from "axios";
 import { useRouter } from "next/router";
 
-const Login = () => {
+const Register = () => {
   const [user, setUser] = useState({
+    name: "",
     email: "",
     password: "",
   });
+  const router = useRouter();
+
   const handleChange = (e) => {
     const value = e.target.value;
     setUser({
@@ -15,26 +19,13 @@ const Login = () => {
       [e.target.name]: value,
     });
   };
-  const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const { email, password, username } = user;
-
-    signIn("credentials", { ...user, redirect: false });
-    try {
-      alert("user has been logged in");
-      router.push("/");
-    } catch (err) {
-      alert("An error occuerred" + err);
-    }
-  };
-
-  const handleGoogleSignIN = async () => {
-    signIn("google", { callbackUrl: "http://localhost:3000/" });
-  };
-  const handleGithubSignIN = async () => {
-    signIn("github", { callbackUrl: "http://localhost:3000/" });
+    axios
+      .post("/api/register", user)
+      .then(() => alert("user registered"), router.push("/"))
+      .catch((err) => alert("An error occured" + err));
   };
 
   return (
@@ -45,6 +36,13 @@ const Login = () => {
       <br />
       <div className={styles.sign}>
         <form onSubmit={handleSubmit}>
+          <input
+            type="name"
+            placeholder="name"
+            name="name"
+            value={user.name}
+            onChange={handleChange}
+          />
           <input
             type="email"
             placeholder="email"
@@ -59,14 +57,11 @@ const Login = () => {
             value={user.password}
             onChange={handleChange}
           />
-          <button className={styles.form_button}>Sign In</button>
+          <button className={styles.form_button}>Register</button>
         </form>
-      </div>
-      <div className={styles.social}>
-        <button onClick={handleGoogleSignIN}>SignUp with Google</button>
-        <button onClick={handleGithubSignIN}>SignUp with Github</button>
       </div>
     </div>
   );
 };
-export default Login;
+
+export default Register;
