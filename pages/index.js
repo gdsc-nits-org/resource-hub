@@ -3,8 +3,6 @@ import styles from "@/styles/Home.module.scss";
 import {  useSession } from "next-auth/react";
 import {useEffect} from "react"
 import { signOut } from "next-auth/react"
-import Head from "next/head";
-import MainSection from "../components/MainSection/MainSection";
 import FrameSetHeaderButtons from "../components/FrameSetHeaderButtons/FrameSetHeaderButtons";
 
 
