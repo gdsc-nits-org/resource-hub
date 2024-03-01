@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+.wrapper {
+    min-height: 100vh;
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+    .part1 {
+
+        .mainHeading {
+            text-align: center;
+            padding: 3rem;
+            font-size: 1.8rem;
+        }
+
+        @media screen and (min-width:300px) {
+            .mainHeading {
+                font-size: 2rem;
+            }
+        }
+
+        @media screen and (min-width:400px) {
+            .mainHeading {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media screen and (min-width:600px) {
+            .mainHeading {
+                font-size: 3rem;
+            }
+        }
+
+        .authorCont {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            width: 80%;
+            margin: 0 auto;
+            font-size: 0.5rem;
+            color: #ffffff;
+            font-weight: 100;
+            padding-bottom: 3rem;
+        }
+
+        @media screen and (min-width:300px) {
+            .authorCont {
+                width: 70%;
+            }
+        }
+
+        @media screen and (min-width:400px) {
+            .authorCont {
+                width: 60%;
+            }
+        }
+
+        @media screen and (min-width:500px) {
+            .authorCont {
+                width: 35%;
+                font-size: 0.4rem;
+            }
+        }
+
+        @media screen and (min-width:600px) {
+            .authorCont {
+                font-size: 0.3rem;
+                width: 20%;
+            }
+        }
+
+        @media screen and (min-width:700px) {
+            .authorCont {
+                font-size: 0.5rem;
+                width: 30%;
+            }
+        }
+
+        @media screen and (min-width:900px) {
+            .authorCont {
+                font-size: 0.5rem;
+                width: 20%;
+            }
+        }
+
+        .tagLine {
+            text-align: center;
+            padding: 3rem;
+            color: #a8acce;
+            font-weight: 100;
+            word-spacing: 0.5rem;
+        }
+    }
+
+    .content {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        color: #ffffffaa;
+        font-size: 0.8rem;
+        word-spacing: 0.5rem;
+
+        .para {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1.2rem;
+
+            .paraheading {
+                color: #ffffff;
+            }
+        }
+
+        .paraSecond {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1.2rem;
+        }
+    }
+}
