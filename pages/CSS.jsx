@@ -4,7 +4,7 @@ export default function CSS() {
         <div className={styles.wrapper}>
             <div className={styles.part1}>
                 <h1 className={styles.mainHeading}>Cascading Stylesheet</h1>
-                <p className={styles.tagLine}>A beginner's intro to CSS, styling, animations and many more</p>
+                <p className={styles.tagLine}>A beginner&apos;s intro to CSS, styling, animations and many more</p>
                 <div className={styles.authorCont}><h1 className={styles.authorName}>Barnil Sarma</h1><h1 className={styles.date}>-28 Feb, 2024</h1></div>
             </div>
             <div className={styles.content}>
