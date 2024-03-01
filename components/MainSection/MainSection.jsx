@@ -1,6 +1,5 @@
-import { memo, useState } from "react";
 import styles from "./MainSection.module.scss";
-const MainSection = memo(() => {
+const MainSection = () => {
     const gotoHome = () => {
         window.location.href = "/";
     }
@@ -54,6 +53,6 @@ const MainSection = memo(() => {
             </div>
         </header>
     );
-});
+};
 
 export default MainSection;
