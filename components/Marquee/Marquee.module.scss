@@ -1,0 +1,50 @@
+$size: clamp(2rem, 1rem + 4vmin, 4rem);
+$gap: calc($size / 14);
+$duration: 30s;
+$scroll-start: 0;
+$scroll-end: calc(-100% - $gap);
+.container {
+  min-width: 100%;
+  padding: $size 1rem;
+  display: flex;
+  gap: $gap;
+  overflow: hidden;
+  user-select: none;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 1) 90%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 1) 90%,
+    transparent 100%
+  );
+  .item {
+    font-size: $size;
+    position: relative;
+    flex-shrink: 0;
+    display: flex;
+    min-width: 100%;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    animation: scroll-x $duration linear infinite;
+  }
+  &:hover .item {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes scroll-x {
+  from {
+    transform: translateX($scroll-start);
+  }
+  to {
+    transform: translateX($scroll-end);
+  }
+}
