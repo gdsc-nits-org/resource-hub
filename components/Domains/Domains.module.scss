@@ -1,0 +1,18 @@
+.container {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: max-content;
+  .title {
+    grid-column: 1 / -1;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-weight: 700;
+    text-align: center;
+  }
+  @media (max-width: 512px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

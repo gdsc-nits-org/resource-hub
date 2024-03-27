@@ -1,0 +1,17 @@
+.card {
+  border: var(--gdsc-line-1-100) solid 1px;
+  border-radius: 0.5rem;
+  padding: 0.625rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  text-decoration: none;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--gdsc-blue-1-100);
+    text-underline-offset: 4px;
+    transform: scale(1.05);
+  }
+}
